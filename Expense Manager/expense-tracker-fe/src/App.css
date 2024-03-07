@@ -1,0 +1,131 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #17181F;
+  color: #ddd;
+}
+
+main{
+  max-width: 360px;
+  margin:30px auto;
+}
+
+h1{
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+
+
+form{
+  margin-top: 20px;
+}
+
+form input{
+  width: 100%;
+  background-color: transparent;
+  color: #ddd;
+  border: 2px solid #30313d;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+form input[type = "datetime-local"]{
+  color: #777;
+}
+
+form .basic{
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+
+}
+
+form button{
+  width: 100%;
+  margin-top: 5px;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ddd;
+}
+
+form button:hover{
+  cursor: pointer;
+}
+
+.transactions{
+  margin-top: 10px;
+}
+
+.transaction{
+  display: grid;
+  grid-template-columns: 2fr 1fr 0.4fr;
+  padding: 5px 0;
+  border-top: 1px solid #30313d;
+}
+
+.transaction:first-child{
+  border-top: none;
+}
+
+.transaction .name{
+  font-size: 1rem;
+}
+
+.transaction .description{
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.left{
+  text-align: left;
+  /* min-width: 110px; */
+}
+
+.right{
+  text-align: right;
+  /* max-width: 110px; */
+}
+
+.green{
+  color: #1c1;
+}
+
+.red{
+  color: #c11;
+}
+
+.transaction .datetime{
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.delete-icon{
+  text-align: right;
+}
+
+.MuiSvgIcon-root:hover{
+  cursor: pointer;
+}
+
+.resetBalance{
+  display: flex;
+  margin-top: 5px;
+}
+
+.resetBalance > *{
+  width: 100%;
+}
+
+.resetBalance input{
+  background-color: transparent;
+  color: #ddd;
+  border: 2px solid #30313d;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
